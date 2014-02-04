@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+<script type="text/javascript" src="plugins/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-arrest.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#demo').arrest(15);
+		$('#demo1').arrest(200);
+	});
+</script>
+<title>继承jQuery的Window向下滚动预隐藏DOM时使其置顶显示插件示例</title>
+</head>
+
+<body>
+<div id="container">
+	<div class="left">
+        <div class="demo" style="background: red;"></div>
+        <div id="demo" style="background: green; width:800px; height: 100px; line-height: 100px; text-align: center; font-size: 24px; font-weight: bolder;">我会跟着一起走哦</div>
+        <div class="demo" style="background: red;></div>
+        <div class="demo" style="background: red;"></div>
+        <div class="demo" style="background: blue;"></div>
+        <div class="demo" style="background: red;"></div>
+        <div class="demo" style="background: blue;"></div>
+        <div class="demo" style="background: red;"></div>
+    </div>
+    <div class="right">
+        <div class="demo" style="background: gray;"></div>
+        <div class="demo" style="background: yellow;"></div>
+        <div id="demo1" class="demo" style="background: green; width: 200px; height: 100px; line-height: 100px; text-align: center; font-size: 24px; font-weight: bolder;">我会跟着一起走</div>
+        <div class="demo" style="background: gray;"></div>
+        <div class="demo" style="background: yellow;"></div>
+    </div>
+    <!--
+	<div class="demo" style="background: red;"></div>
+	<div id="demo" style="background: green; width:1000px"><h1><center>我会跟着一起走哦</center></h1></div>
+	<div class="demo">
+    	<div style="width: 800px; height: 100%; background: blue; float: left;"></div>
+    	<div id="demo1" style="width: 200px; height: 100px; background: yellow; float: left;">
+        	<div style="width: 200px; height: 100px; background: grag;"><h3><center>我会跟着一起走哦</center></h3></div>
+        </div>
+    </div>
+	<div class="demo" style="background: red;"></div>
+	<div class="demo" style="background: blue;"></div>
+	<div class="demo" style="background: red;"></div>
+	<div class="demo" style="background: blue;"></div>
+	<div class="demo" style="background: red;"></div>
+    -->
+</div>
+</body>
+</html>
